@@ -1,0 +1,51 @@
+
+.foreCast_container{
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1em 0 1em;
+} 
+
+   
+.text_font{
+    font-size: 1.2em;
+    color:#333;
+    font-weight: 100;
+    padding: 0.3em;
+ }
+
+.day_container{
+    max-width: 300px;
+    padding: 10px;
+}
+.icons{
+    width: 9em;
+    height: 9em;
+}
+
+.header {
+    font-size: 3em;
+    color:#333;
+    font-weight: 100; 
+    text-align: center;
+     margin: 50px 50px;
+    
+}
+
+.details_page_container{
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+@media (max-width:600px){
+   .foreCast_container{
+       flex-direction: column;
+       justify-content: center;
+   }
+}

@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/weatherApp/static/css/main.570c159f.chunk.css",
+    "main.js": "/weatherApp/static/js/main.bc401124.chunk.js",
+    "main.js.map": "/weatherApp/static/js/main.bc401124.chunk.js.map",
+    "runtime-main.js": "/weatherApp/static/js/runtime-main.d83926fd.js",
+    "runtime-main.js.map": "/weatherApp/static/js/runtime-main.d83926fd.js.map",
+    "static/js/2.e93057e5.chunk.js": "/weatherApp/static/js/2.e93057e5.chunk.js",
+    "static/js/2.e93057e5.chunk.js.map": "/weatherApp/static/js/2.e93057e5.chunk.js.map",
+    "index.html": "/weatherApp/index.html",
+    "precache-manifest.2e2a3cb167ccf0c2514e8636419f8aad.js": "/weatherApp/precache-manifest.2e2a3cb167ccf0c2514e8636419f8aad.js",
+    "service-worker.js": "/weatherApp/service-worker.js",
+    "static/css/main.570c159f.chunk.css.map": "/weatherApp/static/css/main.570c159f.chunk.css.map",
+    "static/media/01d.svg": "/weatherApp/static/media/01d.d37bc50c.svg",
+    "static/media/01n.svg": "/weatherApp/static/media/01n.bd386a65.svg",
+    "static/media/02d.svg": "/weatherApp/static/media/02d.6caa54b4.svg",
+    "static/media/02n.svg": "/weatherApp/static/media/02n.01549e46.svg",
+    "static/media/03d.svg": "/weatherApp/static/media/03d.85f34bb2.svg",
+    "static/media/03n.svg": "/weatherApp/static/media/03n.a8ffe7ce.svg",
+    "static/media/04d.svg": "/weatherApp/static/media/04d.d0ca9a39.svg",
+    "static/media/04n.svg": "/weatherApp/static/media/04n.a8ffe7ce.svg",
+    "static/media/09d.svg": "/weatherApp/static/media/09d.d83471c2.svg",
+    "static/media/09n.svg": "/weatherApp/static/media/09n.910e1057.svg",
+    "static/media/10d.svg": "/weatherApp/static/media/10d.c50bf3e3.svg",
+    "static/media/10n.svg": "/weatherApp/static/media/10n.45a86be0.svg",
+    "static/media/11d.svg": "/weatherApp/static/media/11d.bc6f153e.svg",
+    "static/media/11n.svg": "/weatherApp/static/media/11n.12c7ad8f.svg",
+    "static/media/13d.svg": "/weatherApp/static/media/13d.79f6eb03.svg",
+    "static/media/13n.svg": "/weatherApp/static/media/13n.ea38d2f4.svg",
+    "static/media/50d.svg": "/weatherApp/static/media/50d.f1aae715.svg",
+    "static/media/50n.svg": "/weatherApp/static/media/50n.dc59f73d.svg",
+    "static/media/pattern.svg": "/weatherApp/static/media/pattern.e78b5615.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d83926fd.js",
+    "static/js/2.e93057e5.chunk.js",
+    "static/css/main.570c159f.chunk.css",
+    "static/js/main.bc401124.chunk.js"
+  ]
+}

@@ -2,13 +2,18 @@ import { createSelector } from "reselect";
 
 export const getWeather = state =>  state.weather.data.list;
 
-export const getLoading = state => state.weather.loading;
+const getData = state => state.weather
 
-export const getCity = state => {
-  const city = state.weather.data.city;
-  const cityName = city && `${city["name"]}`;
-  return cityName;
-};
+
+export const getLoading = createSelector(getData, (w) => {
+   return w.loading
+})
+
+
+export const getCity = createSelector(getData, (w) => {
+  const city =  w.data.city && w.data.city['name']
+   return city
+})
 
 const getDayId = state => state.weather.dayId;
 

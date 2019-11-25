@@ -21,6 +21,5 @@ const getDayDetails = (day, id) => {
 export const getDaySelector = createSelector(
   getWeather,
   getDayId,
-  getCity,
   getDayDetails
 ); 

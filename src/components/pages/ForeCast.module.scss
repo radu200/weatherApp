@@ -12,14 +12,14 @@
 
    
 .text_font{
-    font-size: 1.2em;
+    font-size: 1.3em;
     color:#333;
     font-weight: 100;
     padding: 0.3em;
  }
 
 .day_container{
-    max-width: 300px;
+    margin-top:20px;
     padding: 10px;
 }
 .icons{
@@ -36,12 +36,14 @@
     
 }
 
+
 .details_page_container{
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
 
 }
+
 
 @media (max-width:600px){
    .foreCast_container{

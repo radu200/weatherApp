@@ -8,13 +8,11 @@ const ROOT_URL = `https://api.openweathermap.org/data/2.5/forecast?`;
 
 export const fetchWeather =  (city) => (dispatch)=> {  
     const url = `${ROOT_URL}q=${city}&appid=${API_KEY}&type=accurate&units=metric`;
-     dispatch(requestWeather())
+    
+    dispatch(requestWeather())
       instance.get(url)
         .then(res => {
-          setTimeout(() => {
-
             dispatch(receiveWeather(res.data))   
-          }, 2500)
         })
         .catch(err => {
             dispatch(requestWeather(err))

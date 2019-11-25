@@ -15,15 +15,12 @@ const ForeCast = ({ history, getDay, city, weather, handleDayClick, isLoading })
   }
 
   return (
-    <div>
       <ForeCastList
         city={city}
         isLoading={isLoading}
         handleDayClick={handleDayClick}
         data={weather}
       />
-
-    </div>
   )
 }
 

@@ -7,12 +7,10 @@ import { getDaySelector, getCity } from "./../redux/weatherApp/selectors";
 
 const ForeCastDetails  = ({data, city })  => {
   return (
-      <>
         <ForeCastDeatils
           city={city}
           data={data}
         />
-      </>
     );
 
   }

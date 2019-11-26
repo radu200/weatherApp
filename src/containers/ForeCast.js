@@ -4,7 +4,7 @@ import ForeCastList from '../components/pages/ForeCastList'
 import { connect } from 'react-redux'
 import { fetchWeather } from '../redux/weatherApp/operators'
 import { getDay } from '../redux/weatherApp/actions'
-import { getWeather, getLoading, getCity } from '../redux/weatherApp/selectors'
+import {  getLoading, getCity, getDayList} from '../redux/weatherApp/selectors'
 
 const ForeCast = ({ history, getDay, city, weather, handleDayClick, isLoading }) => {
 
@@ -27,7 +27,7 @@ const ForeCast = ({ history, getDay, city, weather, handleDayClick, isLoading })
 
 const mapState = state => {
   return {
-    weather: getWeather(state),
+    weather: getDayList(state),
     isLoading: getLoading(state),
     city: getCity(state)
   }

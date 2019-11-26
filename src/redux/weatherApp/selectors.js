@@ -22,8 +22,12 @@ export const getDayList  = createSelector(getWeatherList, (d) => {
    
   const days = d && d.map(w => w.weather.map(d => ({
       id:w.dt,
+      date:formatDate(w.dt_txt),
+      temp_min:w.main.temp_min,
+      temp_max:w.main.temp_max,
+      humidity:w.main.humidity,
       icon:iconPath(d.icon),
-      date:formatDate(w.dt_txt)
+      description:d.description
     }))).reduce((acc, val) => acc.concat(val),[])
 
     return days 
@@ -32,25 +36,13 @@ export const getDayList  = createSelector(getWeatherList, (d) => {
 
 const getDayDetails = (day, id) => {
   //get single day data
-  const dayWeather = day && day.filter(day => (day.dt === id ? day : null));
+  const dayWeather = day && day.filter(day => (day.id === id ? day : null));
   
-  // select data for that component need
-  const dayDetails  = dayWeather && dayWeather.map(w => w.weather.map(d => ({
-      id:w.dt,
-      date:formatDate(w.dt_txt),
-      temp_min:w.main.temp_min,
-      temp_max:w.main.temp_max,
-      humidity:w.main.humidity,
-      icon:iconPath(d.icon),
-      description:d.description
-
-   })))
-
-  return dayDetails && dayDetails[0];
+   return dayWeather
 };
 
 export const getDaySelector = createSelector(
-  getWeatherList,
+  getDayList,
   getDayId,
   getDayDetails
 ); 

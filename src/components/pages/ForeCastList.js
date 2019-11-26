@@ -15,24 +15,21 @@ const ForeCastList = ({ data, handleDayClick, city, isLoading }) => {
       <h2 className={style.header}>{city}</h2>
 
       <div className={style.foreCast_container}>
-        {data &&
-          data.map(w =>
-            w.weather.map(d => (
-              <div key={w.dt} onClick={() => handleDayClick(w.dt)}>
-                <ForeCast date={w.dt_txt} photo={d.icon} />
-              </div>
-            ))
-          )}
+        {data && data.map(w =>
+          <div key={w.id} onClick={() => handleDayClick(w.id)}>
+            <ForeCast date={w.date} photo={w.icon} />
+          </div>
+        )}
       </div>
     </>
   );
 };
 
 ForeCastList.propTypes = {
-  data:PropTypes.array,
-  handleDayClick:PropTypes.func,
-  city:PropTypes.string,
-  isLoading:PropTypes.bool
+  data: PropTypes.array,
+  handleDayClick: PropTypes.func,
+  city: PropTypes.string,
+  isLoading: PropTypes.bool
 }
 
 export default ForeCastList;

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/weatherApp/static/css/main.570c159f.chunk.css",
-    "main.js": "/weatherApp/static/js/main.94f94fa3.chunk.js",
-    "main.js.map": "/weatherApp/static/js/main.94f94fa3.chunk.js.map",
+    "main.css": "/weatherApp/static/css/main.5ea9e572.chunk.css",
+    "main.js": "/weatherApp/static/js/main.bece5afe.chunk.js",
+    "main.js.map": "/weatherApp/static/js/main.bece5afe.chunk.js.map",
     "runtime-main.js": "/weatherApp/static/js/runtime-main.d83926fd.js",
     "runtime-main.js.map": "/weatherApp/static/js/runtime-main.d83926fd.js.map",
-    "static/js/2.125fb173.chunk.js": "/weatherApp/static/js/2.125fb173.chunk.js",
-    "static/js/2.125fb173.chunk.js.map": "/weatherApp/static/js/2.125fb173.chunk.js.map",
+    "static/js/2.4a05079f.chunk.js": "/weatherApp/static/js/2.4a05079f.chunk.js",
+    "static/js/2.4a05079f.chunk.js.map": "/weatherApp/static/js/2.4a05079f.chunk.js.map",
     "index.html": "/weatherApp/index.html",
-    "precache-manifest.c9c710e53a6078d71cedf8cb4e431df8.js": "/weatherApp/precache-manifest.c9c710e53a6078d71cedf8cb4e431df8.js",
+    "precache-manifest.a9585d294b3ad93d7289bad1a1ab2b25.js": "/weatherApp/precache-manifest.a9585d294b3ad93d7289bad1a1ab2b25.js",
     "service-worker.js": "/weatherApp/service-worker.js",
-    "static/css/main.570c159f.chunk.css.map": "/weatherApp/static/css/main.570c159f.chunk.css.map",
+    "static/css/main.5ea9e572.chunk.css.map": "/weatherApp/static/css/main.5ea9e572.chunk.css.map",
     "static/media/01d.svg": "/weatherApp/static/media/01d.d37bc50c.svg",
     "static/media/01n.svg": "/weatherApp/static/media/01n.bd386a65.svg",
     "static/media/02d.svg": "/weatherApp/static/media/02d.6caa54b4.svg",
@@ -33,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d83926fd.js",
-    "static/js/2.125fb173.chunk.js",
-    "static/css/main.570c159f.chunk.css",
-    "static/js/main.94f94fa3.chunk.js"
+    "static/js/2.4a05079f.chunk.js",
+    "static/css/main.5ea9e572.chunk.css",
+    "static/js/main.bece5afe.chunk.js"
   ]
 }

@@ -8,7 +8,6 @@ const ForeCastDetails = ({
   data,
   city
 }) => {
-  console.log(data)
   return (
     <>
       <NavBar />

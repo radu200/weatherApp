@@ -1,11 +1,10 @@
 import { createSelector } from "reselect";
+import { formatDate, iconPath } from "../../utils/Utils";
 
 const getData = state => state.weather
 const getWeatherList = state => state.weather.data.list;
 const getDayId = state => state.weather.dayId;
 
-
-export const  getWeather = state => state.weather.data.list;
 
 
 export const getLoading = createSelector(getData, (w) => {
@@ -23,8 +22,8 @@ export const getDayList  = createSelector(getWeatherList, (d) => {
    
   const days = d && d.map(w => w.weather.map(d => ({
       id:w.dt,
-      icon:d.icon,
-      date:w.dt_txt
+      icon:iconPath(d.icon),
+      date:formatDate(w.dt_txt)
     }))).reduce((acc, val) => acc.concat(val),[])
 
     return days 
@@ -38,11 +37,11 @@ const getDayDetails = (day, id) => {
   // select data for that component need
   const dayDetails  = dayWeather && dayWeather.map(w => w.weather.map(d => ({
       id:w.dt,
-      date:w.dt_txt,
+      date:formatDate(w.dt_txt),
       temp_min:w.main.temp_min,
       temp_max:w.main.temp_max,
       humidity:w.main.humidity,
-      icon:d.icon,
+      icon:iconPath(d.icon),
       description:d.description
 
    })))

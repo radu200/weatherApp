@@ -18,6 +18,7 @@ const FormInput = ({
       placeholder={placeholder}
       onChange={handleChange}
       value={value}
+      required
     />
   );
 };

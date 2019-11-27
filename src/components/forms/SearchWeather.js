@@ -18,6 +18,7 @@ const SearchWeather = ({
         placeholder="St. George, Utah"
         handleChange={handleChange}
         className={style.search_weather_input}
+        
       />
       <Button
         name="Get Weather"

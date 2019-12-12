@@ -34,7 +34,7 @@ export const getDayList  = createSelector(getWeatherList, (d) => {
 })
 
 
-const getDayDetails = (day, id) => {
+const getDayDetails =  (day, id) => {
   //get single day data
   const dayWeather = day && day.filter(day => (day.id === id ? day : null));
   

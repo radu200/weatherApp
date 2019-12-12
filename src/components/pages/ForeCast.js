@@ -8,7 +8,7 @@ const ForeCast = ({date, photo}) => {
   return (
     <div className={style.day_container}>
       <img  className={style.icons} alt="weather"  src={photo}/> 
-      <p className={style.text_font}>{date}</p>
+      <p  className={style.text_font}>{date}</p>
     </div>
   );
 };

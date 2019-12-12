@@ -12,13 +12,13 @@ const FormInput = ({
 }) => {
   return (
     <input
+      data-test-id="input-search"
       className={className}
       name={name}
       type={type}
       placeholder={placeholder}
       onChange={handleChange}
       value={value}
-      required
     />
   );
 };
@@ -28,6 +28,7 @@ FormInput.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string,
   value: PropTypes.any,
+  className:PropTypes.string,
   onChange: PropTypes.func
 }
 export default FormInput;

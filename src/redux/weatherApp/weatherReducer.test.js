@@ -1,6 +1,5 @@
 import {weatherReducer }from './reducers'
 import { REQUEST_WEATHER, RECEIVE_WEATHER,FAILURE_WEATHER, GET_DAY} from './constants'
-import { start } from 'repl'
 
 
 describe('weather reducer ', () => {

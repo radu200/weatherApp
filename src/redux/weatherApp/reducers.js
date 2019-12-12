@@ -1,10 +1,13 @@
 import { REQUEST_WEATHER, RECEIVE_WEATHER,FAILURE_WEATHER, GET_DAY} from './constants'
-  const initialState = {
+  
+
+const initialState = {
       data:[],
       loading: false,
       error:null,
       dayId:[]
   }
+
 export const weatherReducer = (state = initialState, action) => {
     switch(action.type){
          case REQUEST_WEATHER:
@@ -19,6 +22,8 @@ export const weatherReducer = (state = initialState, action) => {
               return state
     }
 }
+
+
 
 
 

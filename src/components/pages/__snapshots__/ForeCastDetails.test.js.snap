@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component should render ForeCastDetails with given props 1`] = `
+<Fragment>
+  <NavBar />
+  <div
+    className="details_page_container"
+  >
+    <div
+      key="1"
+    >
+      <ForeCast
+        date="Friday, Nov 20"
+        photo="10dn"
+      />
+      <p
+        className="text_font"
+        data-testid="city"
+      >
+        London
+      </p>
+      <p
+        className="text_font"
+        data-testid="description"
+      />
+      <p
+        className="text_font"
+        data-testid="minTemp"
+      >
+         min temp : 
+        10
+      </p>
+      <p
+        className="text_font"
+        data-testid="maxTemp"
+      >
+         max temp : 
+        12
+      </p>
+      <p
+        className="text_font"
+        data-testid="humidity"
+      >
+         humidity : 
+        15
+      </p>
+    </div>
+  </div>
+</Fragment>
+`;

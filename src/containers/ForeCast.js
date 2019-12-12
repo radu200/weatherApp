@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect}from 'react'
 import PropTypes from 'prop-types'
 import ForeCastList from '../components/pages/ForeCastList'
 import { connect } from 'react-redux'
@@ -14,6 +14,9 @@ const ForeCast = ({ history, getDay, city, weather, handleDayClick, isLoading })
 
   }
 
+  useEffect(() => {
+     console.log(window.location)
+  })
   return (
       <ForeCastList
         city={city}

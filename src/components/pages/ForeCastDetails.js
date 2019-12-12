@@ -17,11 +17,11 @@ const ForeCastDetails = ({
           return (
             <div key={w.id}>
               <ForeCast photo={w.icon} date={w.date} />
-              <p className={style.text_font}>{city}</p>
-              <p className={style.text_font}>{w.description}</p>
-              {w.temp_min && <p className={style.text_font}> min temp : {w.temp_min}</p>}
-              {w.temp_max && <p className={style.text_font}> max temp : {w.temp_max}</p>}
-              {w.humidity && <p className={style.text_font}> humidity : {w.humidity}</p>}
+              <p data-testid='city' className={style.text_font}>{city}</p>
+              <p data-testid='description'  className={style.text_font}>{w.description}</p>
+              {w.temp_min && <p data-testid='minTemp'  className={style.text_font}> min temp : {w.temp_min}</p>}
+              {w.temp_max && <p data-testid='maxTemp'  className={style.text_font}> max temp : {w.temp_max}</p>}
+              {w.humidity && <p  data-testid='humidity'  className={style.text_font}> humidity : {w.humidity}</p>}
             </div>
           )
         })

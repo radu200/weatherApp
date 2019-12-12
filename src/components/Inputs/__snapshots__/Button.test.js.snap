@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render button with given props 1`] = `
+<button
+  className="someClass"
+  data-test-id="button-search"
+  type="submit"
+>
+  search
+</button>
+`;

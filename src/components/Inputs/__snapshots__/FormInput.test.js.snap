@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput component should render FormInput with given props 1`] = `
+<input
+  className="some class"
+  data-test-id="input-search"
+  name="some name"
+  placeholder="search"
+  type="text"
+/>
+`;

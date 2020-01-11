@@ -32,7 +32,7 @@ const SearchWeather = ({
 SearchWeather.propTypes = {
   handleClick: PropTypes.func.isRequired,
   handleChange: PropTypes.func.isRequired,
-  value: PropTypes.any.string
+  value: PropTypes.string
 }
 
 export default withSearch(SearchWeather);
